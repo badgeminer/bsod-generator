@@ -5,7 +5,7 @@ import { useLocation } from 'react-router';
 import {Button} from "@material-ui/core";
 import html2canvas from "html2canvas";
 
-function Image(props) {
+function Image() {
     const location = useLocation();
     const { bodyText, errorCode, percent } = location.state;
     const generateImage = () => {
@@ -23,8 +23,10 @@ function Image(props) {
     };
 
     return (
-        <div style={{width: "100%", height: "100%", paddingTop: 45}}>
-            <Button variant={"contained"} color={"primary"} onClick={generateImage} style={{marginBottom: 30}}>Download</Button>
+        <div style={{width: "100%", height: "100%"}}>
+            <div className={"button-container"}>
+                <Button variant={"contained"} color={"primary"} onClick={generateImage}>Download</Button>
+            </div>
             <Background>
                 <Body bodyText={bodyText} errorCode={errorCode} percent={percent}/>
             </Background>
