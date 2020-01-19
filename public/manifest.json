@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "BSOD Generator",
+  "name": "Blue Screen of Death Generator",
   "icons": [
     {
       "src": "favicon.ico",
