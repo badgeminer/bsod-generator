@@ -2,3 +2,5 @@
 /build
 /.idea
 package-lock.json
+/typescript/node_modules
+/typescript/package-lock.json
